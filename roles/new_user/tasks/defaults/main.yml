@@ -1,0 +1,5 @@
+---
+user:
+  login: "user"
+  group: "test"
+  passwd: "$6$72BX1LIL$pWvP83UjCFl/vdYoTiX01f/SiT32NnftxP/KXX0yPPW/ymLoW99E/rVbDlZXLqdJcg9Zdo/kfeLlJYFskBGIc."
