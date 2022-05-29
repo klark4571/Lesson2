@@ -1,0 +1,11 @@
+---
+- name: Create Folder and touch one file
+  hosts: local_hosts
+  roles:
+    - role: new_file
+
+- name: Create User, Group
+  become: yes
+  hosts: local_hosts
+  roles:
+    - role: new_user
