@@ -1,0 +1,13 @@
+---
+- name: Create a new usergroup
+  ansible.builtin.group:
+    name: "{{ user }}"
+    state: present
+
+- name: Create new user
+  ansible.builtin.user:
+    name: "{{ user.login }}"
+    comment: "{{ user.login }}"
+    password: "{{ user.passwd }}"
+    shell: /bin/bash
+    group: "{{ user.group }}"
