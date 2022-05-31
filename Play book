@@ -3,9 +3,11 @@
   hosts: local_hosts
   roles:
     - role: new_file
+      tags: File
 
 - name: Create User, Group
   become: yes
   hosts: local_hosts
   roles:
     - role: new_user
+      tags: User
